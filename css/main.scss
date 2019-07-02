@@ -1,0 +1,391 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'grid.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', 'Raleway', sans-serif;
+}
+header{
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    z-index: 20;
+}
+nav{
+    float: right;
+    text-align: right;
+}
+.logo{
+    display: inline-block;
+    color: white;
+    font-family: $textFont;
+}
+nav > a{
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-family: $textFont;
+}
+.topImg{
+    position: relative;
+    background: $titleColor;
+    background: linear-gradient(135deg, rgba(0,0,0, .1) 0, #000 100%);
+    background-image: linear-gradient(135deg, rgba(0,0,0, .1) 0, #000 100%), url("https://images.pexels.com/photos/1881336/pexels-photo-1881336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    min-height: 500px; 
+    height: 100vh; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        .title{
+            padding:200px 0 80px;
+            padding-right: 30px;
+        }
+        h1{
+            text-transform: uppercase;
+            color: white;
+            font-weight: 300;
+            font-size: 3rem;
+            font-family: $titleFont;
+            text-align: right;
+        }
+        h5{
+            text-transform: uppercase;
+            color: white;
+            font-weight: 300;
+            font-size: 1rem;
+            font-family: $textFont;
+            text-align: right;
+        }
+        .contact-info{
+            width: 100%;
+            // position: absolute;
+            bottom: 0;
+            text-align: right;
+            color: white;
+            font-size: .8rem;
+            line-height: 1.5rem;
+            padding: 50px 0;
+            font-family: $textFont;
+            padding-right: 30px;
+                strong{
+                    font-weight: 700;
+                }
+                h2{
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+                .booking{
+                    margin-bottom: 10px;
+                }
+        }
+}
+.ourStory{
+    font-family: $textFont;
+    padding: 100px 0;
+    h5{
+        color: $textColor;
+        font-size: 1.1rem;
+        margin: .5rem 0 3rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: $titleFont;
+        text-transform: capitalize;
+        margin: .5rem 0 2rem;
+    }
+    p{
+        color: $textColor;
+        font-size: .9rem;
+        margin: .5rem 0 2rem;  
+        font-family: $textFont; 
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+    .quote{
+        font-family: $textFont;
+        color: $textColor;
+        margin-bottom: 3rem;
+        strong{
+            color: $titleColor;
+            font-weight: 700;
+        }
+    }
+    .reserve-btn{
+        font-family: $textFont;
+        display: inline-block;
+        padding: 20px 30px;
+        min-width: 200px;
+        border: 1px solid #000;
+        text-align: center;
+        text-decoration: none;
+        color: $titleColor;
+        text-transform: uppercase;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background: lightsalmon;
+        }
+    }
+    .plate-img{
+    background: black;
+    background: linear-gradient(135deg, rgba(0,0,0, .1) 0, #000 100%);
+    background-image: url("https://images.pexels.com/photos/2403391/pexels-photo-2403391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 500px;  
+    max-width: 450px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    }
+}
+.specialMenu{
+    padding: 100px 0;
+    background: $sectionColor;
+    h5{
+        font-family: $textFont;
+        color: $textColor;
+        font-size: 1.1rem;
+        margin: .5rem 0 3rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: $titleFont;
+        text-transform: capitalize;
+        margin: .5rem 0 2rem;
+        text-align: center;
+    }
+    .box{
+        background: #fff;
+        padding: 20px;
+        font-family: $textFont;
+        text-align: center;
+        .box-img{
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, rgba(0,0,0, .1) 0, #000 100%);
+            background-image:url("https://images.pexels.com/photos/341048/pexels-photo-341048.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: relative;
+            margin-bottom: 75px;
+        }
+        .price-circle{
+            font-family: $titleFont;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 35%;
+            transform: translateX(-50%);
+            transform: translateY(50%);
+            -webkit-box-shadow: 0px 0px 10px 10px rgba(217,217,217,0.8);
+            -moz-box-shadow: 0px 0px 10px 10px rgba(217,217,217,0.8);
+            box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.41);
+        }
+        .title{
+            display: block;
+            font-weight: 600;
+            font-size: .9rem;
+            text-align: center;
+            font-family: $textFont;
+            line-height: 2.5;
+            letter-spacing: 1.5px;
+        }
+        .details{
+            font-weight: 400;
+            font-size: .8rem;
+            text-align: center;
+            font-family: $textFont;
+            line-height: 2.5;
+            letter-spacing: .5px;
+        }
+    }
+    .boxes{
+        padding-bottom: 50px;
+    }
+    a.menu-link{
+        color: $titleColor;
+        text-decoration: none;
+        font-family: $textFont;
+        display: block;
+        text-align: center;
+
+    }
+}
+.quote-section{
+    padding: 200px 0;
+    background: linear-gradient(135deg, rgba(0,0,0, .1) 0, #000 100%);
+    background-image:url("https://images.pexels.com/photos/1639563/pexels-photo-1639563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1{
+        color: white;
+        font-family: $titleFont;
+        font-size: 3rem;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .author{
+        color: white;
+        font-size: 1rem;
+        margin: 0 auto;
+        font-family: $textFont;
+        display: block;
+        text-align: center;
+    }
+}
+.review-section{
+    padding:200px 0 80px;
+    padding-right: 30px;
+    .comp-title{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+        font-family: $textFont;
+        color: $textColor;
+        text-align: right;
+        margin-top: 40px;
+        margin-bottom: 1.5rem;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: $titleFont;
+        text-transform: capitalize;
+        margin: .5rem 0 2rem;
+        text-align: right;
+    }
+    h4{
+        color: $titleColor;
+        font-weight: 700;
+        font-family: $textFont;
+        text-align: right;
+        letter-spacing: 1px;
+    }
+    .author{
+        color: $titleColor;
+        font-weight: 500;
+        font-family: $textFont;
+        text-align: right;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+    p{
+        color: $textColor;
+        font-size: .9rem;
+        margin: .5rem 0 2rem;  
+        font-family: $textFont; 
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+    .arrows{
+        text-align: right;
+        cursor: pointer;
+        i{
+            padding: 20px;
+        }
+    }
+    img{
+        max-width: 500px;
+        text-align: center;
+        margin-left: 80px;
+    }
+}
+.contact-section{
+    padding: 100px 0px;
+    background: $sectionColor;
+    h5{
+        font-family: $textFont;
+        color: $textColor;
+        font-size: 1.1rem;
+        margin: .5rem 0 3rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: $titleFont;
+        text-transform: capitalize;
+        margin: .5rem 0 2rem;
+        text-align: center;
+    }
+    .box{
+        padding: 80px;
+        background: #fff;
+        .city{
+            font-size: 2rem;
+            font-family: $textFont;
+            margin-bottom: 2rem;
+        }
+        h6{
+            font-size: 1rem;
+            font-family: $textFont;
+            margin-bottom: .8rem;
+            font-weight: 500;
+            color: $textColor;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+        }
+        p{
+            margin-bottom: 20px;
+            color: $textColor;
+            font-family: $textFont;
+            text-decoration: none;
+            font-weight: 500;
+            strong{
+                color:$titleColor;
+                font-family: $textFont;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            a{
+                color: $textColor;
+                font-family: $textFont;
+                text-decoration: none;
+                font-weight: 500;
+                &:hover{
+                    color: $titleColor;
+                }
+            }
+        }
+        .number{
+            font-size: 2rem;
+            font-family: $textFont;
+            margin-bottom: 2rem;
+        }
+        .service{
+            color:$titleColor;
+            font-family: $textFont;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}

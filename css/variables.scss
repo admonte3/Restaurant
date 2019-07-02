@@ -1,0 +1,15 @@
+
+// Grid System
+$grid-columns: 12;
+$grid-max-width: 1200px; //breakpoint-small
+$breakpoint-xs: "only screen and (min-width: 0px)";
+$breakpoint-small: "only screen and (min-width: 451px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1008px)";
+$breakpoint-xl: "only screen and (min-width: 1300px)";
+$textFont: 'Raleway', 'Roboto', sans-serif;
+$titleFont: 'Ariel', Times, serif;
+$textColor: #ABABAB;
+$titleColor: #202020;
+$footerColor: #131A22;
+$sectionColor: #F0F0F0;

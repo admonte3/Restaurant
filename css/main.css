@@ -593,6 +593,10 @@ nav > a {
   font-family: "Raleway", "Roboto", sans-serif;
 }
 
+nav > a:hover {
+  color: red;
+}
+
 .topImg {
   position: relative;
   background: #202020;
@@ -994,5 +998,56 @@ nav > a {
   font-family: "Raleway", "Roboto", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+footer {
+  padding: 100px 0;
+  background-color: #131A22;
+  text-align: center;
+}
+
+footer .menu {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer .menu a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", "Roboto", sans-serif;
+}
+
+footer .menu a:hover {
+  color: red;
+}
+
+footer .social-icons {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+footer .social-icons li {
+  display: inline-block;
+}
+
+footer .social-icons li a {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+footer .social-icons li a:hover {
+  color: red;
+}
+
+footer .copyRight {
+  color: #ABABAB;
+  font-family: "Raleway", "Roboto", sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */

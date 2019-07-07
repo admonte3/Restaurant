@@ -14,24 +14,28 @@ header{
     color: white;
     padding: 20px;
     z-index: 20;
-}
-nav{
-    float: right;
-    text-align: right;
-}
-.logo{
-    display: inline-block;
-    color: white;
-    font-family: $textFont;
-}
-nav > a{
-    display: inline-block;
-    padding: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-family: $textFont;
-    &:hover{
-        color: red;
+    .navbar-brand{
+        left: 0;
+        text-decoration: none;
+        color: white !important;
+        font-family: $textFont;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .navbar-nav{
+        margin-left: auto;  
+        text-decoration: none;
+        a{
+            color: white !important;
+            font-family: $textFont;
+            text-transform: uppercase !important;
+            letter-spacing: .5px;
+            &:hover{
+                color: red !important;
+            }
+        }
     }
 }
 .topImg{
@@ -136,7 +140,8 @@ nav > a{
         text-transform: uppercase;
         transition: all .5s ease-in-out;
         &:hover{
-            background: lightsalmon;
+            background: red;
+            color: #fff;
         }
     }
     .plate-img{
@@ -267,57 +272,66 @@ nav > a{
 .review-section{
     padding:200px 0 80px;
     padding-right: 30px;
-    .comp-title{
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 1rem;
-        font-family: $textFont;
-        color: $textColor;
-        text-align: right;
-        margin-top: 40px;
-        margin-bottom: 1.5rem;
-    }
-    h2{
-        font-size: 3rem;
-        font-family: $titleFont;
-        text-transform: capitalize;
-        margin: .5rem 0 2rem;
-        text-align: right;
-    }
-    h4{
-        color: $titleColor;
-        font-weight: 700;
-        font-family: $textFont;
-        text-align: right;
-        letter-spacing: 1px;
-    }
-    .author{
-        color: $titleColor;
-        font-weight: 500;
-        font-family: $textFont;
-        text-align: right;
-        letter-spacing: 1px;
-        margin-bottom: 1.5rem;
-    }
-    p{
-        color: $textColor;
-        font-size: .9rem;
-        margin: .5rem 0 2rem;  
-        font-family: $textFont; 
-        text-align: justify;
-        line-height: 1.5rem;
+    .slides-container{
+        position: relative;
+        .comp-title{
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1rem;
+            font-family: $textFont;
+            color: $textColor;
+            text-align: right;
+            margin-top: 40px;
+            margin-bottom: 1.5rem;
+        }
+        .mySlides {
+            display: none;
+            text-align: center;
+            h2{
+                font-size: 3rem;
+                font-family: $titleFont;
+                text-transform: capitalize;
+                margin: .5rem 0 2rem;
+                text-align: right;
+            }
+            h4{
+                color: $titleColor;
+                font-weight: 700;
+                font-family: $textFont;
+                text-align: right;
+                letter-spacing: 1px;
+            }
+            .author{
+                color: $titleColor;
+                font-weight: 500;
+                font-family: $textFont;
+                text-align: right;
+                letter-spacing: 1px;
+                margin-bottom: 1.5rem;
+            }
+            p{
+                color: $textColor;
+                font-size: .9rem;
+                margin: .5rem 0 2rem;  
+                font-family: $textFont; 
+                text-align: justify;
+                line-height: 1.5rem;
+            }
+        }
     }
     .arrows{
         text-align: right;
         cursor: pointer;
+        .back:hover, .next:hover {
+            color: red;
+          }
         i{
-            padding: 20px;
+            padding: 50px;
         }
     }
     img{
-        max-width: 500px;
-        text-align: center;
-        margin-left: 80px;
+        max-width: 450px;
+        padding-left: 20px;
     }
 }
 .contact-section{
@@ -432,5 +446,11 @@ footer{
         font-family: $textFont;
         font-size: .8rem;
         font-weight: 500;
+    }
+}
+//Mobile Menu
+@media only screen and (max-width: 767px){
+    .ourStory .plate-img {
+        margin-top: 30px;
     }
 }

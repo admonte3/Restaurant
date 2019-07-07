@@ -574,27 +574,31 @@ header {
   z-index: 20;
 }
 
-nav {
-  float: right;
-  text-align: right;
-}
-
-.logo {
-  display: inline-block;
-  color: white;
-  font-family: "Raleway", "Roboto", sans-serif;
-}
-
-nav > a {
-  display: inline-block;
-  padding: 0 10px;
+header .navbar-brand {
+  left: 0;
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-family: "Raleway", "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-nav > a:hover {
-  color: red;
+header .navbar-nav {
+  margin-left: auto;
+  text-decoration: none;
+}
+
+header .navbar-nav a {
+  color: white !important;
+  font-family: "Raleway", "Roboto", sans-serif;
+  text-transform: uppercase !important;
+  letter-spacing: .5px;
+}
+
+header .navbar-nav a:hover {
+  color: red !important;
 }
 
 .topImg {
@@ -713,7 +717,8 @@ nav > a:hover {
 }
 
 .ourStory .reserve-btn:hover {
-  background: lightsalmon;
+  background: red;
+  color: #fff;
 }
 
 .ourStory .plate-img {
@@ -856,7 +861,11 @@ nav > a:hover {
   padding-right: 30px;
 }
 
-.review-section .comp-title {
+.review-section .slides-container {
+  position: relative;
+}
+
+.review-section .slides-container .comp-title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1rem;
@@ -867,7 +876,12 @@ nav > a:hover {
   margin-bottom: 1.5rem;
 }
 
-.review-section h2 {
+.review-section .slides-container .mySlides {
+  display: none;
+  text-align: center;
+}
+
+.review-section .slides-container .mySlides h2 {
   font-size: 3rem;
   font-family: "Ariel", Times, serif;
   text-transform: capitalize;
@@ -875,7 +889,7 @@ nav > a:hover {
   text-align: right;
 }
 
-.review-section h4 {
+.review-section .slides-container .mySlides h4 {
   color: #202020;
   font-weight: 700;
   font-family: "Raleway", "Roboto", sans-serif;
@@ -883,7 +897,7 @@ nav > a:hover {
   letter-spacing: 1px;
 }
 
-.review-section .author {
+.review-section .slides-container .mySlides .author {
   color: #202020;
   font-weight: 500;
   font-family: "Raleway", "Roboto", sans-serif;
@@ -892,7 +906,7 @@ nav > a:hover {
   margin-bottom: 1.5rem;
 }
 
-.review-section p {
+.review-section .slides-container .mySlides p {
   color: #ABABAB;
   font-size: .9rem;
   margin: .5rem 0 2rem;
@@ -906,14 +920,17 @@ nav > a:hover {
   cursor: pointer;
 }
 
+.review-section .arrows .back:hover, .review-section .arrows .next:hover {
+  color: red;
+}
+
 .review-section .arrows i {
-  padding: 20px;
+  padding: 50px;
 }
 
 .review-section img {
-  max-width: 500px;
-  text-align: center;
-  margin-left: 80px;
+  max-width: 450px;
+  padding-left: 20px;
 }
 
 .contact-section {
@@ -1049,5 +1066,11 @@ footer .copyRight {
   font-family: "Raleway", "Roboto", sans-serif;
   font-size: .8rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .ourStory .plate-img {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
